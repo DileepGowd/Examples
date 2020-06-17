@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [First Suite]" parallel="tests">
+  <test name="flipkart(failed)" parallel="tests">
+    <classes>
+      <class name="com.automation.test.AmazonSiteTest">
+        <methods>
+          <include name="openWebSite"/>
+          <include name="closeSite"/>
+        </methods>
+      </class> <!-- com.automation.test.AmazonSiteTest -->
+      <class name="com.automation.test.FlipkartSiteTest">
+        <methods>
+          <include name="searchProduct"/>
+          <include name="openWebSite"/>
+          <include name="closeSite"/>
+        </methods>
+      </class> <!-- com.automation.test.FlipkartSiteTest -->
+    </classes>
+  </test> <!-- flipkart(failed) -->
+  <test name="amazon(failed)" parallel="tests">
+    <classes>
+      <class name="com.automation.test.AmazonSiteTest">
+        <methods>
+          <include name="openWebSite"/>
+          <include name="searchProduct"/>
+          <include name="closeSite"/>
+        </methods>
+      </class> <!-- com.automation.test.AmazonSiteTest -->
+      <class name="com.automation.test.FlipkartSiteTest">
+        <methods>
+          <include name="openWebSite"/>
+          <include name="closeSite"/>
+        </methods>
+      </class> <!-- com.automation.test.FlipkartSiteTest -->
+    </classes>
+  </test> <!-- amazon(failed) -->
+</suite> <!-- Failed suite [First Suite] -->

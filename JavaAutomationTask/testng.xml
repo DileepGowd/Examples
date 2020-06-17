@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="First Suite" annotations="JDK" parallel="tests">
+         
+  <test name="flipkart">
+	 <classes>
+	   <class name="com.automation.test.FlipkartSiteTest"/>
+	 </classes>
+   </test>
+   
+  <test name="amazon">
+     <classes>
+       <class name="com.automation.test.AmazonSiteTest"/>
+     </classes>
+   </test>
+</suite>
